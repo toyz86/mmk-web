@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+  <title>web-mmk</title>
+</head>
+<body>
+
+<header role="header" class="clearfix">
+  <div class="logo">
+    <img src="/img/logo.png">
+  </div>
+  <nav role="nav" class="nav__btn__wrapper">
+    <span class="nav__toggle"></span>
+    <span class="nav__toggle"></span>
+    <span class="nav__toggle"></span>
+  </nav>
+</header>
+
+<main role="main">
+  <div class="nav-body">
+    <ul class="nav-body__list">
+      <li class="nav-body__item">
+        <span>Home</span>
+      </li>
+      <li class="nav-body__item">
+        <span>Activation</span>
+      </li>
+      <li class="nav-body__item">
+        <span>Branding</span>
+      </li>
+      <li class="nav-body__item">
+        <span>CGI</span>
+      </li>      
+      <li class="nav-body__item">
+        <span>Digital</span>
+      </li>      
+    </ul>
+  </div>
+  <!-- </main> -->
+
+
+<!-- Slider main container -->
+<div class="swiper-container">
+  
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e345efed95fe1ee25f9/download/01.jpeg)">
+        <h1 class="activation">Activation</h1>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54ec23e980216be6a38e3/download/04.jpeg)">
+      </div>
+      <h1 class="cgi">CGI</h1>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e60f67a2e8fcdfb4405/download/10.jpeg)">
+      </div>
+      <h1 class="branding">Branding</h1>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e82d8b2e585ce508b4b/download/04.jpeg)">
+      </div>
+      <h1 class="digital">Digital</h1>
+    </div>    
+  </div>
+  
+  <!-- Slide captions -->
+  <!-- <div class="slide-captions"></div> -->
+  
+  <!-- If we need pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+
+  <!-- If we need navigation buttons -->
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+  
+</div>  
+</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
