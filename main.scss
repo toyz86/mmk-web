@@ -157,11 +157,12 @@ body {
 
 /* Swiper pagination */
 .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: 50px;
+  bottom: 50px;
 }
 .swiper-button-prev,
 .swiper-button-next {
-    color: #fff;
+  color: #fff;
+  visibility: hidden;
 }
 
 main[role="main"] {

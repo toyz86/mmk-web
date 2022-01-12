@@ -186,6 +186,7 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff;
+  visibility: hidden;
 }
 
 main[role="main"] {

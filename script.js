@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+  // mousewheel control for swipe slider
+  $('.swiper-container').on('wheel', function(e){
+    if(e.originalEvent.wheelDelta > 0) {
+      $('.swiper-button-prev').trigger('click');
+    }
+    else {
+      $('.swiper-button-next').trigger('click');
+    }
+  });
+
 const interleaveOffset = 0.5;
 
 const mySwiper = new Swiper ('.swiper-container', {
@@ -8,7 +18,7 @@ const mySwiper = new Swiper ('.swiper-container', {
   speed: 1200,
   slideToClickedSlide: true,
   /* mousewheel cuma bisa scroll sekali, gak tau kenapa */
-  mousewheel: true,
+  // mousewheel: true,
   // allowSlideNext: true,
   // allowSlidePrev: true,
   // slidePerView: 'auto',
@@ -69,6 +79,10 @@ const mySwiper = new Swiper ('.swiper-container', {
     },
   },
 });
+
+
+
+
 
 // mySwiper.mousewheel.enable()
 gsap.config({nullTargetWarn: false});
