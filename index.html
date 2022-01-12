@@ -6,26 +6,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- FONT LINK -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <!-- YANG KEPAKE CUMA JQUERY, SWIPER.JS, GSAP -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollToPlugin.min.js"></script>
+
   <title>web-mmk</title>
 </head>
 <body>
 
-<header role="header" class="clearfix">
-  <div class="logo">
-    <img src="/img/logo.png">
-  </div>
+  <header role="header" class="clearfix">
+    <div class="logo">
+      <a href="/">
+        <img src="/img/logo.png">
+      </a>
+    </div>
+  </header>
+  
+  <div id='overlay'></div>
+
+  <!-- BURGER MENU -->
   <nav role="nav" class="nav__btn__wrapper">
     <span class="nav__toggle"></span>
     <span class="nav__toggle"></span>
     <span class="nav__toggle"></span>
   </nav>
-</header>
 
-<main role="main">
+  <!-- BEGIN NAV BODY -->
   <div class="nav-body">
     <ul class="nav-body__list">
       <li class="nav-body__item">
@@ -45,48 +60,46 @@
       </li>      
     </ul>
   </div>
-  <!-- </main> -->
+  <!-- END NAV BODY -->
 
+  <!-- BEGIN SWIPER CONTAINER -->
+  <main role="main">
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <section class="swiper-slide one">
+          <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e345efed95fe1ee25f9/download/01.jpeg)">
+          </div>
+          <h1 class="activation">Activation</h1>
+        </section>
+        <section class="swiper-slide two">
+          <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54ec23e980216be6a38e3/download/04.jpeg)">
+          </div>
+          <h1 class="cgi">CGI</h1>
+        </section>
+        <section class="swiper-slide three">
+          <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e60f67a2e8fcdfb4405/download/10.jpeg)">
+          </div>
+          <h1 class="branding">Branding</h1>
+        </section>
+        <section class="swiper-slide four">
+          <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e82d8b2e585ce508b4b/download/04.jpeg)">
+          </div>
+          <h1 class="digital">Digital</h1>
+        </section>    
+      </div>
+      
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
 
-<!-- Slider main container -->
-<div class="swiper-container">
-  
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e345efed95fe1ee25f9/download/01.jpeg)">
-        <h1 class="activation">Activation</h1>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54ec23e980216be6a38e3/download/04.jpeg)">
-      </div>
-      <h1 class="cgi">CGI</h1>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e60f67a2e8fcdfb4405/download/10.jpeg)">
-      </div>
-      <h1 class="branding">Branding</h1>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(https://trello.com/1/cards/61d2a198b9eb5747e47876ba/attachments/61d54e82d8b2e585ce508b4b/download/04.jpeg)">
-      </div>
-      <h1 class="digital">Digital</h1>
-    </div>    
-  </div>
-  
-  <!-- Slide captions -->
-  <!-- <div class="slide-captions"></div> -->
-  
-  <!-- If we need pagination -->
-  <!-- <div class="swiper-pagination"></div> -->
-
-  <!-- If we need navigation buttons -->
-  <!-- <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div> -->
-  
-</div>  
-</main>
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+      
+    </div>  
+  </main>
+  <!-- END SWIPER CONTAINER -->
 
 	<script src="script.js"></script>
 </body>
